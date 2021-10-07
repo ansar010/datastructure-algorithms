@@ -5,8 +5,8 @@ package com.ansar.dsalgo.cci.arrays_and_string;
  */
 public class IsUnique {
     public static void main(String[] args) {
-        System.out.println(isUnique("Helo"));
-        countRepeatLetter("Heelloppppo");
+        System.out.println(isUnique("mzu"));
+//        countRepeatLetter("Heelloppppo");
     }
 
     private static void countRepeatLetter(String str) {
@@ -26,12 +26,21 @@ public class IsUnique {
             return false;
         }
 
+        //create array size 128 to store letter in ASCII index
         boolean[] char_set = new boolean[128];
+
+        //Traverse till string length
         for (int i = 0; i < str.length(); i++) {
+            //In int data type charAt() will return ASCII index of i
             int val = str.charAt(i);
+
+//            System.out.println(val);
+
+            //Return not unique if index has true value
             if (char_set[val]) {
                 return false;
             }
+            //Making the ASCII index value true
             char_set[val] = true;
         }
         return true;

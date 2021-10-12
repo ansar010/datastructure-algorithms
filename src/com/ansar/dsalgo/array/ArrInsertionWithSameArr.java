@@ -3,7 +3,7 @@ package com.ansar.dsalgo.array;
 /**
  * This program implements methods for array insertion, deletion,traversal etc.
  */
-public class ArrayInsertion {
+public class ArrInsertionWithSameArr {
     public static void main(String[] args) {
         int[] arr = new int[100];
         int arrSize, indexPosition, element;
@@ -77,10 +77,5 @@ public class ArrayInsertion {
         //Insert the element in given index above for loop will shift the elements
         arr[i + 1] = element;
         return 1;
-    }
-
-    private static int[] insertAtIndex(int[] arr, int length, int index, int element) {
-        
-        return arr;
     }
 }

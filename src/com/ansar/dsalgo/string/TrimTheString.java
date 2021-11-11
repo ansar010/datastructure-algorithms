@@ -29,9 +29,10 @@ public class TrimTheString {
             }
         }
 
+        // we add +1 because in char array index value start from 0  
         count = endStr - startStr + 1;// count to define length of new string
 
-        String finalStr = new String(charArray, startStr, count);
+        String finalStr = new String(charArray, startStr, count); // CharArray i want from this start index to till this end index
         System.out.println(finalStr);
     }
 }
